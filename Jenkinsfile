@@ -15,8 +15,8 @@ pipeline {
             steps {
                 sh 'pip3 install molecule molecule_docker'
                 //sh 'pip uninstall urllib3'
-                //sh 'pip uninstall chardet'
-                sh 'pip3 install -upgrade requests'
+                sh 'pip3 install chardet'
+                sh 'pip3 install --upgrade requests'
             }
         }
         stage("run molecule") {
