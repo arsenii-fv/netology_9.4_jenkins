@@ -18,7 +18,8 @@ pipeline {
         }
         stage("run molecule") {
             steps {
-                sh 'molecule test'
+                ls -l
+                //sh 'molecule test'
             }
         }
     }
