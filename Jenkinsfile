@@ -24,7 +24,7 @@ pipeline {
         stage("run molecule") {
             steps {
                 dir ('roles_g/roles/vector_role/') {
-                   sh 'molecule test -s centos8_t'
+                   sh 'molecule test'
                 }    
             }
         }
