@@ -15,6 +15,7 @@ pipeline {
             steps {
                 sh 'pip3 install molecule molecule_docker'
                 sh 'pip3 install --upgrade requests'
+                sh 'pip3 install urllib3==1.26'
             }
         }
         stage("run molecule") {
