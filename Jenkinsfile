@@ -18,8 +18,8 @@ pipeline {
         }
         stage("run molecule") {
             steps {
-                sh 'ls -l'
-                //sh 'molecule test'
+                sh 'cd roles/vector_role/'
+                sh 'molecule test -s centos8'
             }
         }
     }
