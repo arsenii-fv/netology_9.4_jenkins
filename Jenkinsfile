@@ -14,6 +14,7 @@ pipeline {
         stage("download molecule") {
             steps {
                 sh 'pip3 install molecule molecule_docker'
+                sh 'pip3 install --upgrade requests'
             }
         }
         stage("run molecule") {
